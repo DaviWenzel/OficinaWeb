@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo da Aula 1</title>
+</head>
+<body>
+    <div class="container">
+        <script>
+        /*
+            Estrutura Sequencial.
+            Comandos de saída.
+            Template string e interpolação
+        */
+       var nome = prompt("Informe o nome do produto:")
+       var descricao = prompt("Informe a descricao do produto:")
+       var preco = prompt("Informe o valor do produto:")
+        document.write(`<h1 class = "titulo">${nome}</h1>`);
+        document.write(`<article class = "descricao">${descricao}</article>`);
+        document.write(`<aside class = "preco">${preco}</aside>`);
+        alert(`${nome} adicionado!`);
+        console.log(`${nome} foi adicionado!`)
+        </script>
+    </div>
+
+    <style>
+        *{
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            border: 0.2rem solid gray;
+            width: 30rem; /* rem = size of root m */
+            height: 12rem;
+            background-color: black;
+            color: greenyellow;
+            padding: 1rem; 
+            margin: 2rem 3rem 4rem 5rem; /* cima, direita, baixo esquerda */
+            /* margin: 2rem 3rem; cima baixo, esquerda direita*/
+            /* margin: 2rem auto coloca no meio*/
+            border-radius: .5rem;
+            border-color: green;
+            box-shadow: .5rem .5rem 0rem 0.01rem greenyellow ; /* descolamento x, y espalhamento intensidade */
+        }
+    </style>
+</body>
+</html>
