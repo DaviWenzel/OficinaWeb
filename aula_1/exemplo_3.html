@@ -13,21 +13,34 @@
             Comandos de saída.
             Template string e interpolação
         */
-       var nome = prompt("Informe o nome do produto:")
-       var descricao = prompt("Informe a descricao do produto:")
-       var preco = prompt("Informe o valor do produto:")
-        document.write(`<h1 class = "titulo">${nome}</h1>`);
-        document.write(`<article class = "descricao">${descricao}</article>`);
-        document.write(`<aside class = "preco">${preco}</aside>`);
-        alert(`${nome} adicionado!`);
-        console.log(`${nome} foi adicionado!`)
+        function adicionarProduto(){
+            var nome = prompt("Informe o nome do produto:")
+            var descricao = prompt("Informe a descricao do produto:")
+            var preco = prompt("Informe o valor do produto:")
+            document.write(`<h1 class = "titulo">${nome}</h1>`);
+            document.write(`<article class = "descricao">${descricao}</article>`);
+            document.write(`<aside class = "preco">${preco}</aside>`);
+            alert(`${nome} adicionado!`);
+            console.log(`${nome} foi adicionado!`)
+        }
         </script>
     </div>
-
+    <button class = "botao" onclick = adicionarProduto()> Botão! </button>
     <style>
         *{
             font-size: 16px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .botao {
+            border: 0.2rem solid gray; 
+            width: 6rem;
+            background-color: black;
+            color: greenyellow;
+            border-radius: .5rem;
+            border-color: green;
+            box-shadow: .5rem .5rem 0rem 0.01rem greenyellow ;
+            padding: 1rem;
+            margin: 2rem;
         }
         .container {
             border: 0.2rem solid gray;
@@ -36,7 +49,8 @@
             background-color: black;
             color: greenyellow;
             padding: 1rem; 
-            margin: 2rem 3rem 4rem 5rem; /* cima, direita, baixo esquerda */
+            margin: 2rem; 
+            /* cima, direita, baixo esquerda */
             /* margin: 2rem 3rem; cima baixo, esquerda direita*/
             /* margin: 2rem auto coloca no meio*/
             border-radius: .5rem;
