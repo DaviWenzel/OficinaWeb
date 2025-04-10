@@ -6,6 +6,7 @@
 .painel {
     border: 5px solid black;
     padding: 1rem;
+    margin: 1rem auto;
     width: 25rem;
     border-radius: 1rem;
     height: 30rem;
@@ -26,11 +27,11 @@
 
 
 .cabecalho, .corpo {
-    border: 5px solid white;
+    border: 5px solid gray;
     padding: 1rem;
     margin: 1rem auto;
     font-weight:bolder;
-    color: white;
+    background-color: white;
     width: 20rem;
     border-radius: .5rem;
 }
@@ -45,6 +46,9 @@
 
 .corpo{
     height: 9rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .entrada{
@@ -52,7 +56,7 @@
 }
 
 button{
-    background-color: blue;
+    background-color: gray;
     color: black;
     border: none;
     padding: .5rem .8rem;
@@ -60,7 +64,7 @@ button{
 }
 
 button:hover{
-    background-color: aqua;
-    color:darkgray;
+    background-color: darkgray;
+    color:white;
     font-weight:bolder;
 }

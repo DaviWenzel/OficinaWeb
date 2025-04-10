@@ -11,10 +11,10 @@
         <section class="cabecalho">
             <input type="number" id="numero1" class="entrada">
             <input type="number" id="numero2" class="entrada">
-            <button class = "botao">Somar</button>
+            <button class = "botao" onclick = "somar()">Somar</button>
         </section>
-        <main id = corpo>
-            <div class="resp"></div>
+        <main class = corpo>
+            <div id="corpo"></div>
         </main>
     </div>
     
@@ -27,11 +27,12 @@
          * Template string
          * Interpolação
          */
-        var num = 
-        var num2 =
-        var soma = num + num2
-        document.getElementById("resp").innerHTML = `Número informado: ${num} + ${num2} = ${soma}`
-        // document.getElementById("resp").innerHTML = "Número informado: " + num + " + " + num2 + " = " + soma
+        function somar(){
+            var num = parseInt(numero1.value)
+            var num2 = parseInt(numero2.value)
+            var soma = num + num2
+            document.getElementById("corpo").innerHTML = `Número informado: ${num} + ${num2} = ${soma}`
+        }
     </script>
 </body>
 </html>
