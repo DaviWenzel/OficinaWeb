@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 1 Aula 2</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "painel">
+        <section class="cabecalho"></section>
+        <main id = corpo>
+            <div class="resp"></div>
+        </main>
+    </div>
+    
+    <script>
+        /*
+         * Comandos de entrada 
+         * Variável
+         * Comandos de saída
+         * Operador de adição
+         * Template string
+         * Interpolação
+         */
+        var num = parseInt(prompt("Informe o número"))
+        var num2 = parseInt(prompt("Informe o número"))
+        var soma = num + num2
+        document.getElementById("resp").innerHTML = `Número informado: ${num} + ${num2} = ${soma}`
+        // document.getElementById("resp").innerHTML = "Número informado: " + num + " + " + num2 + " = " + soma
+    </script>
+</body>
+</html>
