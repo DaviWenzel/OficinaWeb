@@ -1,1 +1,1 @@
-Oficina de Web.
+Oficina de Desenvolvimento Web.
