@@ -8,7 +8,11 @@
 </head>
 <body>
     <div class = "painel">
-        <section class="cabecalho"></section>
+        <section class="cabecalho">
+            <input type="number" id="numero1" class="entrada">
+            <input type="number" id="numero2" class="entrada">
+            <button class = "botao">Somar</button>
+        </section>
         <main id = corpo>
             <div class="resp"></div>
         </main>
@@ -23,8 +27,8 @@
          * Template string
          * Interpolação
          */
-        var num = parseInt(prompt("Informe o número"))
-        var num2 = parseInt(prompt("Informe o número"))
+        var num = 
+        var num2 =
         var soma = num + num2
         document.getElementById("resp").innerHTML = `Número informado: ${num} + ${num2} = ${soma}`
         // document.getElementById("resp").innerHTML = "Número informado: " + num + " + " + num2 + " = " + soma

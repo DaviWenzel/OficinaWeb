@@ -38,8 +38,29 @@
 .cabecalho{
     height: 4rem;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .corpo{
     height: 9rem;
+}
+
+.entrada{
+    width: 3rem;
+}
+
+button{
+    background-color: blue;
+    color: black;
+    border: none;
+    padding: .5rem .8rem;
+    border-radius: .8rem;
+}
+
+button:hover{
+    background-color: aqua;
+    color:darkgray;
+    font-weight:bolder;
 }
