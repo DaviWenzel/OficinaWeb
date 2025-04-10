@@ -25,9 +25,18 @@
     color: white;
 }
 
+#resp2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
 
 .cabecalho, .corpo {
-    border: 5px solid gray;
     padding: 1rem;
     margin: 1rem auto;
     font-weight:bolder;
@@ -45,7 +54,7 @@
 }
 
 .corpo{
-    height: 9rem;
+    height: 18rem;
     display:flex;
     justify-content: center;
     align-items: center;

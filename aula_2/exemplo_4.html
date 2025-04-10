@@ -14,7 +14,7 @@
             <button class = "botao" onclick = "somar()">Somar</button>
         </section>
         <main class = corpo>
-            <div id="corpo"></div>
+            <div id="resp2"></div>
         </main>
     </div>
     
@@ -31,7 +31,7 @@
             var num = parseInt(numero1.value)
             var num2 = parseInt(numero2.value)
             var soma = num + num2
-            document.getElementById("corpo").innerHTML = `Número informado: ${num} + ${num2} = ${soma}`
+            document.getElementById("resp2").innerHTML += `<p>${num} + ${num2} = ${soma}<\p>`
         }
     </script>
 </body>
