@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes da Cidade</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div id="tela"></div>
-
     <script src="app.js"></script>
 
     <script>
@@ -22,13 +22,17 @@
             cidade = cidades.find(function(elem) { return elem.id == id })
 
             if (cidade) {
-                tela.innerHTML = `<p>
-                                    id: ${cidade.id} <br/>
-                                    cidade: <strong>${cidade.cidade}</strong> <br/>
-                                    estado: ${cidade.estado} <br/>
-                                    População: ${cidade.população}
-                                  </p>
-                                  <img src = ${cidade.img}><\img>`
+                tela.innerHTML = `<div class="container">
+                                    <div class="card">
+                                    <div class = "innerText">
+                                        Nome da Cidade: <strong>${cidade.cidade}</strong> <br/>
+                                        Estado: ${cidade.estado} <br/>
+                                        População: ${cidade.populacao}
+                                    </div>
+                                    <img src="${cidade.img}" class="imagem" width="300" height="300"/>
+                                    </div>
+                                    </div>`
+                                  
             }
             else {
                 tela.innerHTML = `Cidade não encontrada`

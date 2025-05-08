@@ -24,9 +24,11 @@
       for (let i = 0; i < cidades.length; i++) {
         let cidade = cidades[i];
         strTextoHTML += `<li>
+                            <div class ="card2">
                             <a href="detalhes.html?id=${cidade.id}">
                                 ${cidade.cidade} - ${cidade.estado} 
                             </a>
+                            </div>
                          </li>`;
       }
 

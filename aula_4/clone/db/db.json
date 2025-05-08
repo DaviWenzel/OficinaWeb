@@ -5,14 +5,14 @@
       "cidade": "Belo Horizonte",
       "estado": "MG",
       "populacao": 3800000,
-      "img": "img1.png"
+      "img": "https://github.com/DaviWenzel/OficinaWeb/blob/main/imagens/img1.png"
     },
     {
       "id": 2,
       "cidade": "São Paulo",
       "estado": "SP",
       "populacao": 11800000,
-      "img": "img2.png"
+      "img": "https://github.com/DaviWenzel/OficinaWeb/blob/main/imagens/img2.png"
     },
     {
       "id": 3,
