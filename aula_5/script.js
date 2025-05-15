@@ -26,7 +26,6 @@ async function getPostagem(id) {
       });
   }
 
-  
   function imprimeMensagem(objeto) {
     var mensagem;
 
@@ -50,7 +49,7 @@ async function getPostagem(id) {
     return mensagem;
   }
 
-  async function getPostagens() {
+  async function getPostagensSemID() {
     await fetch(`https://jsonplaceholder.typicode.com/posts`)
       .then((response) => response.json())
       .then((json) => {
@@ -206,8 +205,6 @@ async function getPostagem(id) {
       });
   }
 
-
-  
   function imprime(objeto) {
     var mensagem;
 
